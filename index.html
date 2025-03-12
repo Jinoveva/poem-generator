@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Poem generator</title>
     <link rel="stylesheet" href="index.css" />
     <link
       rel="stylesheet"
@@ -11,6 +11,8 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -19,11 +21,12 @@
         <form action="">
           <input
             type="text"
-            placeholder="What is your name?"
+            placeholder="Type your name for a personalised poem"
             required
             autocomplete="off"
+            class="inputTxt"
           />
-          <input type="submit" />
+          <input type="submit" class="submitBtn" />
         </form>
       </header>
       <div class="row">
@@ -31,7 +34,7 @@
           <img src="plant.jpg" alt="" width="400px" heihgt="800px" />
         </div>
         <div class="col-9">
-          <div class="poem">Hello</div>
+          <div id="poem"></div>
         </div>
       </div>
       <footer>
