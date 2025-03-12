@@ -46,6 +46,24 @@ img {
   text-align: center;
   margin: 100px 50px;
 }
+.hidden {
+  display: none;
+}
 footer {
   text-align: center;
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
