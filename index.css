@@ -52,6 +52,9 @@ img {
 footer {
   text-align: center;
 }
+.links {
+  color: #d76c82;
+}
 
 .generating {
   animation: blink-animation 1s steps(5, start) infinite;
